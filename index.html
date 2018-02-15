@@ -6,9 +6,7 @@
 		<title>NAODAN Chartering Inc.</title>
 
  		<link  href="css/style.css"          rel="stylesheet" />
- 		<script src="js/jquery-1.7.2.min.js" ></script>
-	 	<script src="js/waypoints.js"        ></script>
-	 	<script src="js/SmoothScroll.js"     ></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 		<!-- ~~ IMG SLIDER ~~ -->
  		<link  href="css/style-slider.css"   rel="stylesheet" media="screen"/>
@@ -19,8 +17,8 @@
 		<script src='js/prettyPhoto/js/jquery.prettyPhoto.js'></script>
 		<!-- ~~ IMG SLIDER ~~ -->
 
-		<!-- GA Tracking -->
 		<script>
+			// GA Tracking
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -28,6 +26,15 @@
 		  ga('create', 'UA-27965776-2', 'naodan.com');
 		  ga('send', 'pageview');
 
+			// Smooth Scroll
+			$(document).on('click', 'a[href^="#"]', function (event) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				}, 500);
+			});
+
+			// Initiate Slider
 			$(document).ready(function(){
 				$('#img_slider').aviaSlider();
 			});
@@ -40,7 +47,7 @@
 		<div id="header">
 			<div id="bg_header"></div>
 			<div class="wrapper">
-				<img id="logo" src="images/logo_header.png" alt="NAODAN CHARTERING" />
+				<a href="#home"><img id="logo" src="images/logo_header.png" alt="NAODAN CHARTERING" /></a>
 				<ul id="h_NAV" class="fRight"><li id="hn_home"><a href="#home">HOME</a></li><li id="hn_team"><a href="#bar">TEAM</a></li><li id="hn_clients"><a href="#team-bot">CLIENTS</a></li><li id="hn_contact"><a href="#footer">CONTACT</a></li></ul>
 				<img id="asba" src="images/head_ASBA-55.png" alt="ASBA" />
 				<br class="fClear" />
