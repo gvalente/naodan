@@ -343,22 +343,9 @@ a:active  { color: #00464C; text-decoration: underline; }
 	background: #00757F;
 	margin: 0px 10px 5px 0px;
 }
-#clients #logos img.lastLogo {
-	width: 150px;
-	height: 94px;
-	padding: 5px;
-	background: #00757F;
+#clients #logos img:last-child {
 	margin: 0px 0px 5px 0px;
 }
-#clients #logos img:hover {
-	background: #008C98;
-	box-shadow: rgba(0,0,0,0.3) 0 0 3px, rgba(0,0,0,0.35) 0 2px 3px;
-	-moz-box-shadow: rgba(0,0,0,0.3) 0 0 3px, rgba(0,0,0,0.35) 0 2px 3px;
-	-webkit-box-shadow: rgba(0,0,0,0.3) 0 0 3px, rgba(0,0,0,0.35) 0 2px 3px;
-}
-
-
-
 #clients #logos img.lastrow  {
 	margin-left: 140px;
 }
