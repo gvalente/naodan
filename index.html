@@ -18,27 +18,39 @@
 		<!-- ~~ IMG SLIDER ~~ -->
 
 		<script>
-			// GA Tracking
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-27965776-2', 'naodan.com');
-		  ga('send', 'pageview');
+		// GA Tracking
+(function(i, s, o, g, r, a, m) {
+  i["GoogleAnalyticsObject"] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }),
+    (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+ga("create", "UA-27965776-2", "naodan.com");
+ga("send", "pageview");
 
-			// Smooth Scroll
-			$(document).on('click', 'a[href^="#"]', function (event) {
-				event.preventDefault();
-				$('html, body').animate({
-					scrollTop: $($.attr(this, 'href')).offset().top
-				}, 500);
-			});
+// Smooth Scroll
+$(document).on("click", 'a[href^="#"]', function(event) {
+  event.preventDefault();
+  $("html, body").animate(
+    {
+      scrollTop: $($.attr(this, "href")).offset().top
+    },
+    500
+  );
+});
 
-			// Initiate Slider
-			$(document).ready(function(){
-				$('#img_slider').aviaSlider();
-			});
-		</script>
+// Initiate Slider
+$(document).ready(function() {
+  $("#img_slider").aviaSlider();
+});
+</script>
 
 	</head>
 
@@ -60,7 +72,10 @@
 
 				<div id="slider_base" class="cell">
  					<ul id="img_slider" class="aviaslider rounded">
- 						<li><a href="images/slider/img01.jpg"    title=""><img src="images/slider/img01-cropped.png" alt="" /></a></li>
+						<li><a href="images/slider/img10.jpg"    title=""><img src="images/slider/img10-cropped.jpg" alt="" /></a></li>
+						<li><a href="images/slider/img11.jpg"    title=""><img src="images/slider/img11-cropped.jpg" alt="" /></a></li>
+						<li><a href="images/slider/img12.jpg"    title=""><img src="images/slider/img12-cropped.jpg" alt="" /></a></li>
+						<li><a href="images/slider/img01.jpg"    title=""><img src="images/slider/img01-cropped.png" alt="" /></a></li>
 						<li><a href="images/slider/img02.jpg"    title=""><img src="images/slider/img02-cropped.png" alt="" /></a></li>
 						<li><a href="images/slider/img00.jpg"    title=""><img src="images/slider/img00-cropped.png" alt="" /></a></li>
 						<li><a href="images/slider/img04.jpg"    title=""><img src="images/slider/img04-cropped.png" alt="" /></a></li>
@@ -69,9 +84,6 @@
 						<li><a href="images/slider/img07.jpg"    title=""><img src="images/slider/img07-cropped.jpg" alt="" /></a></li>
 						<li><a href="images/slider/img08.jpg"    title=""><img src="images/slider/img08-cropped.jpg" alt="" /></a></li>
 						<li><a href="images/slider/img09.png"    title=""><img src="images/slider/img09-cropped.png" alt="" /></a></li>
-						<li><a href="images/slider/img10.jpg"    title=""><img src="images/slider/img10-cropped.jpg" alt="" /></a></li>
-						<li><a href="images/slider/img11.jpg"    title=""><img src="images/slider/img11-cropped.jpg" alt="" /></a></li>
-						<li><a href="images/slider/img12.jpg"    title=""><img src="images/slider/img12-cropped.jpg" alt="" /></a></li>
 						<li><a href="images/slider/img091-cropped.jpg" title=""><img src="images/slider/img091-cropped.jpg" alt="" /></a></li>
 					</ul>
 				</div>
@@ -171,26 +183,6 @@
 						</div>
 						<div class="empBio cell"  >
 							<p class="bio rounded">Erin joined NAODAN in November of 2015 as Office/Documentation Administrator. She has served as artistic administrator for various musical endeavors with individuals and non-profits, in addition to paving a career as a performer and coach.</p>
-						</div>
-						<br class="fClear" />
-					<li>   <!-- OLIVIER NGUYEN    -->
-						<div class="empName cell" >
-							<div class="empPI rounded">
-								<div class="pi">
-									<p>
-										<strong>Olivier Nguyen</strong><br />
-										Operations Associate
-									</p>
-									<div class="contact">
-										<p>C: (832) 683 – 6190</p>
-										<a href="mailto:operations@naodan.com">operations@naodan.com</a>
-									</div>
-								</div>
-								<img src="images/employees/olivier.png" alt="olivier" class="rounded" />
-							</div>
-						</div>
-						<div class="empBio cell"  >
-							<p class="bio rounded">Olivier graduated from Texas A&amp;M in 2014 with a Bachelor’s degree in Ocean Engineering. Born and raised in Houston, Olivier enjoys spending time outside playing disk golf, soccer, and wakeboarding and a new snowboarder. Olivier determined he wanted to move to a cooler/dryer climate and decided to live in Seattle. In August of 2016, Olivier joined NAODAN Chartering and is currently training to be a chartering broker.</p>
 						</div>
 						<br class="fClear" />
 					<li>   <!-- SERENA LIN    -->
@@ -306,10 +298,10 @@
 
 
 		<script type="text/javascript" charset="utf-8">
-			$(document).ready(function(){
-				$("a[rel^='prettyPhoto']").prettyPhoto();
-			});
-		</script>
+		$(document).ready(function() {
+  $("a[rel^='prettyPhoto']").prettyPhoto();
+});
+</script>
 
 	</body>
 </html>
