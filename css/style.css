@@ -258,10 +258,11 @@ a:active {
 /* TIMELINE */
 #timeline {
   height: 146px;
-  background: #efefef url("../images/TL_wrapper-big.png") center 114px no-repeat;
+  background: #efefef url("../images/timeline-bg.png") center 114px repeat-x;
   margin-bottom: 60px;
   padding-top: 40px;
 }
+
 #timeline #banner {
   height: 56px;
   width: 960px;
