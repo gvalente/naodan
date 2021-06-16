@@ -68,6 +68,10 @@ a:active {
   text-decoration: underline;
 }
 
+.MB_link {
+  color: #46bfd4;
+}
+
 /* --- STYLES ----- */
 
 .wrapper {
@@ -75,43 +79,70 @@ a:active {
   margin: 0 auto;
 }
 
+.header-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* HEADER */
 #header {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 90px;
+  height: 120px;
   background: #ffffff url("../images/bg_linen-dark.png") 0 0 repeat;
   border-bottom: 1px solid #c7d5d6;
   z-index: 100;
 }
 
-#header img#logo {
-  float: left;
-  height: 90px;
-  width: 370px;
-  margin-left: 20px;
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-logo {
+  margin: auto;
+  width: 70%;
+  display: block;
+}
+
+.mb-logo {
+  width: 75%;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
 }
 
 #header #asba {
   float: right;
-  height: 90px;
-  width: 55px;
+  height: 40px;
+  width: 40px;
+  margin: 0 0 10px 10px;
 }
 
 #header #h_NAV {
   float: left;
   height: 90px;
   width: 321px;
-  margin-left: 169px;
   list-style-type: none;
   color: #555;
+  padding-top: 6px;
 }
+
 #header #h_NAV li {
   display: inline-block;
   width: 79px;
   height: 23px;
-  margin-top: 35px;
+  /* margin-top: 35px; */
   text-align: center;
   border-left: solid 1px #005d65;
   font: 14px "MuseoSans300", sans-serif;
@@ -154,7 +185,7 @@ a:active {
 
 /* HOME */
 #home {
-  height: 640px;
+  height: 700px;
   padding: 131px 0px 70px 0px;
 }
 
@@ -170,7 +201,6 @@ a:active {
   height: 307px;
   width: 780px;
 }
-
 #home #info {
   height: 213px;
   width: 637px;
@@ -208,10 +238,11 @@ a:active {
 /* TIMELINE */
 #timeline {
   height: 146px;
-  background: #efefef url("../images/TL_wrapper-big.png") center 114px no-repeat;
+  background: #efefef url("../images/timeline-bg.png") center 114px repeat-x;
   margin-bottom: 60px;
   padding-top: 40px;
 }
+
 #timeline #banner {
   height: 56px;
   width: 960px;
