@@ -20,7 +20,7 @@ document.documentElement.className += 'js_active';
 			slides: 'li',				// wich element inside the container should serve as slide
 			animationSpeed: 900,		// animation duration
 			autorotation: true,			// autorotation true or false?
-			autorotationSpeed: 5,		// duration between autorotation switch in Seconds
+			autorotationSpeed: 2,		// duration between autorotation switch in Seconds
 			appendControlls: '',		// element to apply controlls to
 			slideControlls: 'items',	// controlls, yes or no?
 			blockSize: {height: 'full', width:'full'},

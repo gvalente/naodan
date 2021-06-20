@@ -1,3 +1,14 @@
+// jQuery browser was removed as of jQuery v.1.9.x
+jQuery.browser = {};
+(function () {
+  jQuery.browser.msie = false;
+  jQuery.browser.version = 0;
+  if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+    jQuery.browser.msie = true;
+    jQuery.browser.version = RegExp.$1;
+  }
+})();
+
 $(document).ready(function(){
 
 
