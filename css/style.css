@@ -69,7 +69,7 @@ a:active {
 }
 
 .MB_link {
-  color: #46bfd4;
+  color: #46bfd4 !important;
 }
 
 /* --- STYLES ----- */
