@@ -1,3 +1,9 @@
+// jQuery browser was removed as of jQuery v.1.9.x
+jQuery.browser = {
+    msie: false,
+    version: 0
+};
+
 $(document).ready(function(){
 
 
