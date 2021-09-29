@@ -236,6 +236,16 @@ a:active {
 }
 
 /* TIMELINE */
+.timeline-container {
+  display: flex;
+}
+
+@media screen and (min-width: 800px) {
+  #timeline {
+    width: 100%;
+  }
+}
+
 #timeline {
   height: 146px;
   background: #efefef url("../images/timeline-bg.png") center 114px repeat-x;
@@ -265,7 +275,6 @@ a:active {
   background: url("../images/bg_wave-top.jpg") repeat-x;
 }
 #team-top p.textHead {
-  position: relative;
   top: 60px;
   font: 60px "MuseoSans300", sans-serif;
   text-align: center;
@@ -455,6 +464,16 @@ a:active {
 }
 
 /* FOOTER */
+.footer-container {
+  display: flex;
+}
+
+@media screen and (min-width: 800px) {
+  #footer {
+    width: 100%;
+  }
+}
+
 #footer {
   height: 78px;
   background: #ffffff url("../images/bg_linen-dark.png") 0 0 repeat;
